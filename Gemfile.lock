@@ -161,6 +161,7 @@ DEPENDENCIES
   database_cleaner (= 1.2.0)
   haml-rails
   jquery-rails
+  minitest (= 5.3.4)
   pg
   pry
   pry-nav
