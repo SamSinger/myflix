@@ -1,0 +1,88 @@
+The gem is rspec-rails-2
+https://github.com/rspec/rspec-rails
+
+gem install rspec-rails
+
+in Gemfile:
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
+
+Then:
+bundle
+
+
+Then:
+rails g rspec:install
+
+#Behavior driven test
+#What do you want to specifiy that the model should do?
+Model should save itself.
+
+it is a key word
+
+3 steps
+data (setup)
+perform action
+verify
+
+.should is rspec
+
+== is the matcher
+
+from Lynda
+given, when, Then
+uses a dsl layer (DSL)  , domain specific language
+
+thinking in user stories
+happy path is more inportant for writing tests than the unhappy path
+
+anytime a bug is fixed, write a test for it.
+don't test duplications
+A bad or partial or broken test are problems. fix or remove
+Keep test suite often.
+Everytime you commit if you have other people contributing.
+Write no brittle test.
+
+rake db: migrate db:test:prepare (check that all migrations run
+	then change schema file, :prepare loads test db based on schema)
+
+WARNING: db:test:prepare is deprecated. The Rails test helper 
+now maintains your test schema automatically, 
+see the release notes for details.
+
+require 'spec_helper'
+
+describe Video do 
+	it "saves itself" do
+		video = Video.new(title: "Hercules", description: "a movie about a powerful man")
+		video.save
+		expect(Video.first).to eq(video)
+		#Video.first.should == video   #alternative code
+		#Vvido.first.should eq(video)   #alternative code
+	end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
