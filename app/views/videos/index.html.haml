@@ -1,1 +1,11 @@
-%h1 index
+%article.video_category
+	- @categories.each do |category|
+		%header
+			%h3= category.name
+		.videos.row
+			- category.recent_videos.each do |video|
+				.video_info.col-sm-3
+					= link_to video do
+						%img.img-responsive(src="#{video.small_cover_url}") 
+
+		
