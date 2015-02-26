@@ -14,45 +14,46 @@ Video.create(title: "Monk",
 	description: "my description of Monk",
 	small_cover_url: "/tmp/monk.jpg",
 	large_cover_url: "/tmp/monk.jpg",
-	category_id: 1)
+	category: comedy)
 Video.create(title: "Family Guy",
 	description: "my description of Family Guy",
 	small_cover_url: "/tmp/family_guy.jpg",
 	large_cover_url: "/tmp/family_guy.jpg",
-	category_id: 2)
+	category: drama)
 Video.create(title: "Futurama",
 	description: "my description of Futurama",
 	small_cover_url: "/tmp/futurama.jpg",
 	large_cover_url: "/tmp/futurama.jpg",
-	category_id: 2)
+	category: comedy)
 Video.create(title: "South Park",
 	description: "my description of South Park",
 	small_cover_url: "/tmp/south_park.jpg",
 	large_cover_url: "/tmp/south_park.jpg",
-	category_id: 2)
+	category: comedy)
 Video.create(title: "Monk", 
 	description: "my description of Monk",
 	small_cover_url: "/tmp/monk.jpg",
 	large_cover_url: "/tmp/monk.jpg",
-	category_id: 1)
+	category: drama)
 Video.create(title: "Family Guy",
 	description: "my description of Family Guy",
 	small_cover_url: "/tmp/family_guy.jpg",
 	large_cover_url: "/tmp/family_guy.jpg",
-	category_id: 2)
+	category: comedy)
 Video.create(title: "Futurama",
 	description: "my description of Futurama",
 	small_cover_url: "/tmp/futurama.jpg",
 	large_cover_url: "/tmp/futurama.jpg",
-	category_id: 2)
+	category: comedy)
 Video.create(title: "South Park",
 	description: "my description of South Park",
 	small_cover_url: "/tmp/south_park.jpg",
 	large_cover_url: "/tmp/south_park.jpg",
-	category_id: 2)
+	category: comedy)
 Video.create(title: "South Park",
 	description: "my description of South Park",
 	small_cover_url: "/tmp/south_park.jpg",
 	large_cover_url: "/tmp/south_park.jpg",
-	category_id: 2)
+	category: comedy)
+
  
